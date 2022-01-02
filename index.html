@@ -8,9 +8,12 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
+
 <link rel="stylesheet" href="css/base/animations.css">
 <link rel="stylesheet" href="css/base/base.css">
 <link rel="stylesheet" href="css/base/utility.css">
+
 <link rel="stylesheet" href="css/components/button.css">
 <link rel="stylesheet" href="css/components/composition.css">
 <link rel="stylesheet" href="css/components/feature-box.css">
@@ -19,6 +22,7 @@
 <link rel="stylesheet" href="css/components/bg-video.css">
 <link rel="stylesheet" href="css/components/form.css">
 <link rel="stylesheet" href="css/components/gallery.css">
+
 <link rel="stylesheet" href="css/layouts/navigation.css">
 <link rel="stylesheet" href="css/layouts/header.css">
 <link rel="stylesheet" href="css/layouts/grid.css">
@@ -40,7 +44,9 @@
 
 <script src="bootstrap-4.5.0-dist/js/jquery-3.4.1.min.js"></script>
 
-<title> UDS | home of innovation </title>
+
+
+<title> UDS | home of innovators </title>
 </head>
 
 <body>
@@ -107,12 +113,14 @@
 			<div class="head__text-box">
 			<h1 class="heading-pry">
 				<span class="heading-pry--main">unilag design studio</span>
-				<span class="heading-pry--sub">A place for innovation</span>
+				<span class="heading-pry--sub">A home for innovators</span>
 			</h1>
 	
 			<a href="#section-tours" class="btn btn--white btn--animated">Chech out our designs</a>
 			</div>
 		</section>
+
+		
 		<section class="section-tours" id="section-tours">
 			<div class="u-center-text u-margin-bottom-big">
 				<h2 class="heading-sec"> Upcoming Events</h2>
@@ -202,6 +210,7 @@
 				<a href="#" class="btn-text u-margin-bottom-medium"> Contact UDS manager</a>
 			</div>
 		</section>
+
 		<section class="section-about" id="section-about">
 			<div class="u-center-text u-margin-bottom-big">
 				<h2 class="heading-sec">
@@ -231,20 +240,17 @@
 							<img srcset="image/arduino1.jpg 300w, image/arduino2.jpg 1000w" 
 							sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 44vw, 286px"
 							alt="Photo 1" 
-							class="composition__photo composition__photo--p1"
-							src="image/nat-1-large.jpg" >
+							class="composition__photo composition__photo--p1">
 
 							<img srcset="image/matterandform1.jpg 300w, image/matterandform2.jpg 1000w" 
 							sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 44vw, 286px"
 							alt="Photo 2" 
-							class="composition__photo composition__photo--p2"
-							src="image/nat-2-large.jpg" >
+							class="composition__photo composition__photo--p2">
 
 							<img srcset="image/ultimaker1.jpg 300w, image/ultimaker2.jpg 1000w" 
 							sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 44vw, 286px"
 							alt="Photo 3" 
-							class="composition__photo composition__photo--p3"
-							src="image/nat-3-large.jpg" >
+							class="composition__photo composition__photo--p3">
 
 							<!-- resolution switching: letting the browser decide which image to download-->
 						</div>
@@ -396,7 +402,10 @@
 								</div>
 
 								<div class="form__group">
-									<button class="btn btn--green btn--animated">Next step &rarr;</button>									
+									<button onclick="sweetalertButton()" type="button" 
+									class="btn btn--green btn--animated">Next step &rarr;
+									</button>									
+									<!-- put type back as submit when submission is ready -->
 								</div>
 							</form>
 						</div>
@@ -479,10 +488,13 @@
 		</p>
 	</footer>
 
+
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
 	<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 	<script src="js/sweetalert.js"></script>
+	
 </body>
 
 
